@@ -5,18 +5,18 @@ using namespace std;
 
 int main(int ac, char **av)
 {
-    int i = 1;
-    while (i < ac)
+    if (ac == 1)
+        cout << "ERROR" << endl;
+    else
     {
-        int j = 0;
-        while (av[i][j])
+        for(int i = 1; i < ac;i++)
         {
-            cout << (char)toupper(av[i][j]);
-            j++;
+            string str = av[i];
+            for(int j = 0; j < (int)str.length(); j++)
+            {
+                char c = toupper(str[j]);
+                cout << c;
+            }
         }
-        cout << " ";
-        i++;
     }
-    cout << endl;
-    return 0;
 }
