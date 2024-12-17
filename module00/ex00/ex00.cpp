@@ -17,6 +17,8 @@ int main(int ac, char **av)
                 char c = toupper(str[j]);
                 cout << c;
             }
+            if(i < ac - 1)
+                cout << " ";
         }
     }
 }
