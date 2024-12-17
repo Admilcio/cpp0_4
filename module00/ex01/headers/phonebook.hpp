@@ -15,7 +15,7 @@ class Phonebook
         unsigned int     _index;
         string  _firstname;
         string  _lastname;
-        string  _nickename;
+        string  _nickname;
 		string	_darkestsecret;
 		string	_phonenumber;
     public:

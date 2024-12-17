@@ -21,8 +21,8 @@ void	Phonebook::ft_add()
 	getline(cin, _lastname);
 	tmp.set_last_name(_lastname);
 	cout << "Nickename: ";
-	getline(cin, _nickename);
-	tmp.set_nicke_name(_nickename);
+	getline(cin, _nickname);
+	tmp.set_nick_name(_nickname);
 	cout << "Phone number: ";
 	getline(cin, _phonenumber);
 	tmp.set_phone_number(_phonenumber);
@@ -55,7 +55,7 @@ void	Phonebook::ft_display_contacts()
 		<< "|" << setw(10) << i
 		<< "|" << setw(10) << resize(_contacts[i].get_first_name())
 		<< "|" << setw(10) << resize(_contacts[i].get_last_name())
-		<< "|" << setw(10) << resize(_contacts[i].get_nicke_name()) << "|"
+		<< "|" << setw(10) << resize(_contacts[i].get_nick_name()) << "|"
 		<< endl;
 	}
 }
@@ -74,7 +74,7 @@ void	Phonebook::ft_search()
 		{
 			cout << "First Name: " << this->_contacts[index].get_first_name() << endl;
 			cout << "Last Name: " << this->_contacts[index].get_last_name() << endl;
-			cout << "NickeName: " << this->_contacts[index].get_nicke_name() << endl;
+			cout << "NickeName: " << this->_contacts[index].get_nick_name() << endl;
 			cout << "Phone Number: " << this->_contacts[index].get_phone_number() << endl;
 			cout << "Darkest Secret: " << this->_contacts[index].get_darkest_secret() << endl;
 		}

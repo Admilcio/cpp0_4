@@ -10,9 +10,9 @@ string	Contact::get_last_name()
 	return (this->_last_name);
 }
 
-string	Contact::get_nicke_name()
+string	Contact::get_nick_name()
 {
-	return (this->_nicke_name);
+	return (this->_nick_name);
 }
 
 string	Contact::get_darkest_secret()
@@ -35,9 +35,9 @@ void Contact::set_last_name(string lastname)
 	this->_last_name = lastname;
 }
 
-void Contact::set_nicke_name(string nickename)
+void Contact::set_nick_name(string nickname)
 {
-	this->_nicke_name = nickename;
+	this->_nick_name = nickname;
 }
 
 void Contact::set_darkest_secret(string darkestsecret)
