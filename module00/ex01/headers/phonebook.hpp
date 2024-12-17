@@ -13,11 +13,11 @@ class Phonebook
         Contact _contacts[8];
         unsigned int     _current;
         unsigned int     _index;
-        std::string  _firstname;
-        std::string  _lastname;
-        std::string  _nickename;
-		std::string	_darkestsecret;
-		std::string	_phonenumber;
+        string  _firstname;
+        string  _lastname;
+        string  _nickename;
+		string	_darkestsecret;
+		string	_phonenumber;
     public:
         Phonebook();
         ~Phonebook(){};

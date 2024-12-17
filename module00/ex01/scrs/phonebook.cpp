@@ -93,7 +93,7 @@ int main()
     ft_display();
     while (1337)
     {
-        cout << "> ";
+        cout << "Select a command > ";
         getline(cin, command);
         if (command == "ADD")
             Phonebook.ft_add();
