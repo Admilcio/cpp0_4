@@ -29,9 +29,9 @@ void	Phonebook::ft_add()
 	cout << "Darkest Secret: ";
 	getline(cin, _darkestsecret);
 	tmp.set_darkest_secret(_darkestsecret);
-	this->_contacts[_current % 2] = tmp;
+	this->_contacts[_current % 8] = tmp;
 	this->_current++;
-	if (this->_current <= 2)
+	if (this->_current <= 8)
 		this->_index = this->_current;
 	cout << "CONTACT ADDED SUCCESSFULY" << endl;
 }
