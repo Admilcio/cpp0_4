@@ -6,7 +6,7 @@ int main()
     std::string command;
 
     Phonebook.ft_display();
-    while (1)
+    while (std::cin.eof())
     {
         std::cout << "Select a command > ";
         getline(std::cin, command);
