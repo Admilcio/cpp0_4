@@ -5,7 +5,6 @@
 #include <iomanip>
 #include "contact.hpp"
 #include <climits>
-using namespace std;
 
 class Phonebook
 {
@@ -13,17 +12,18 @@ class Phonebook
         Contact _contacts[8];
         unsigned int     _current;
         unsigned int     _index;
-        string  _firstname;
-        string  _lastname;
-        string  _nickname;
-		string	_darkestsecret;
-		string	_phonenumber;
+        std::string  _firstname;
+        std::string  _lastname;
+        std::string  _nickname;
+		std::string	_darkestsecret;
+		std::string	_phonenumber;
     public:
         Phonebook();
-        ~Phonebook(){};
+        ~Phonebook();
         void	ft_add();
         void	ft_search();
 		void	ft_display_contacts();
+        void    ft_display();
 };
 
 #endif

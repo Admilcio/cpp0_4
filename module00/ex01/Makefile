@@ -1,8 +1,8 @@
-SRC = scrs/phonebook.cpp scrs/contact.cpp
+SRC = phonebook.cpp contact.cpp main.cpp
 OBJ = $(SRC:.cpp=.o)
 CC = g++
 RM = rm -f
-CPPFLAGS = -Wall -Wextra -Werror
+CPPFLAGS = -Wall -Wextra -Werror -std=c++98
 
 NAME = phonebook
 
